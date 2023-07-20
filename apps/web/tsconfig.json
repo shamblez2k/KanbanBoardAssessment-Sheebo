@@ -1,6 +1,7 @@
 {
   "extends": "tsconfig/nextjs.json",
   "compilerOptions": {
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
@@ -16,6 +17,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  "jsx": "react"
+  ]
 }
