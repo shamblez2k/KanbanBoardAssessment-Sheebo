@@ -13,12 +13,21 @@ yarn run dev
 
 ## Dependancies
 
-If the project fails to build/run as intended, check the page.tsx file location inside apps/app folder and if you see an issue with it finding the dependencies for "react" and/or "styled-components", run the following commands depending on which dependencies are missing:
+If the project fails to build/run as intended, check the page.tsx file location inside apps/web/app folder and if you see an issue with it finding the dependencies for "react" and "styled-components", run the following command:
 
 ```sh
 yarn add -W react
+```
+
+If it still doesn't run, run this command and try again:
+
+```sh
 yarn add -W styled-components
 ```
+
+## jsx changes
+
+The tsconfig.json file in apps/web sets "jsx": to "preserve" by default, and sometimes it needs to be set to "react" for the first run of the project. If the project is still not running, try setting the jsx to react and check if it works.
 
 ## What's inside?
 
