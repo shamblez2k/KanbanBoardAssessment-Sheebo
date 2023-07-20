@@ -18,5 +18,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "styled-components": "^6.0.4"
+  }
 }

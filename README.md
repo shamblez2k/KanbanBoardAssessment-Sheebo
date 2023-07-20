@@ -16,8 +16,8 @@ yarn run dev
 If the project fails to build/run as intended, check the page.tsx file location inside apps/app folder and if you see an issue with it finding the dependencies for "react" and/or "styled-components", run the following commands depending on which dependencies are missing:
 
 ```sh
-yarn add -D -W react
-yarn add -D -W styled-components
+yarn add -W react
+yarn add -W styled-components
 ```
 
 ## What's inside?
