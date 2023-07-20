@@ -1,13 +1,23 @@
-# Turborepo starter
+# Turborepo starter demo project
 
-This is an official starter Turborepo.
+This is an official starter Turborepo. There are a couple of dependancies that may or may not need to be installed to run it.
 
 ## Using this example
 
-Run the following command:
+Run the following commands after cloning the repository:
 
 ```sh
-npx create-turbo@latest
+cd KanbanBoardAssessment-Sheebo
+yarn run dev
+```
+
+## Dependancies
+
+If the project fails to build/run as intended, check the page.tsx file location inside apps/app folder and if you see an issue with it finding the dependencies for "react" and/or "styled-components", run the following commands depending on which dependencies are missing:
+
+```sh
+yarn add -D -W react
+yarn add -D -W styled-components
 ```
 
 ## What's inside?
